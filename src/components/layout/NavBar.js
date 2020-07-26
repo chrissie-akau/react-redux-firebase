@@ -10,7 +10,6 @@ const NavBar = () => {
                 <Link to='/' className="brand-logo">MarioPlan</Link>
                 <SignedInLinks />
                 <SignedOutLinks />
-
             </div>
         </nav>   
     );
