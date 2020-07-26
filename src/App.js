@@ -5,6 +5,7 @@ import { BrowserRouter as Router,
        } from 'react-router-dom'
 import NavBar from './components/layout/NavBar'
 import Dashboard from './components/dashboard/Dashboard'
+import ProjectDetails from './components/projects/ProjectDetails'
 
 class App extends Component {
   state = {  }
@@ -14,7 +15,8 @@ class App extends Component {
         <div className="App">
           <NavBar />
           <Switch>
-            <Route path='/' component={Dashboard}></Route>
+            <Route exact path='/' component={Dashboard} />
+            <Route path='/project/:id' component={ProjectDetails} />
           </Switch>
         </div>
       </Router>
